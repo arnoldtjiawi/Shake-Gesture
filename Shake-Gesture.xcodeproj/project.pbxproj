@@ -14,6 +14,7 @@
 		7F7C4A81229A92E7003267E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7C4A7F229A92E7003267E1 /* LaunchScreen.storyboard */; };
 		7F7C4A89229A930F003267E1 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C4A88229A930F003267E1 /* UIColor+Ext.swift */; };
 		7F7C4A8B229AC2B7003267E1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C4A8A229AC2B7003267E1 /* CustomView.swift */; };
+		7F7C4A8F229AE30B003267E1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C4A8E229AE30B003267E1 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7F7C4A82229A92E7003267E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F7C4A88229A930F003267E1 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		7F7C4A8A229AC2B7003267E1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		7F7C4A8E229AE30B003267E1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				7F7C4A76229A92E6003267E1 /* AppDelegate.swift */,
 				7F7C4A78229A92E6003267E1 /* ViewController.swift */,
+				7F7C4A8E229AE30B003267E1 /* FirstViewController.swift */,
 				7F7C4A8A229AC2B7003267E1 /* CustomView.swift */,
 				7F7C4A88229A930F003267E1 /* UIColor+Ext.swift */,
 				7F7C4A7A229A92E6003267E1 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7C4A8F229AE30B003267E1 /* FirstViewController.swift in Sources */,
 				7F7C4A89229A930F003267E1 /* UIColor+Ext.swift in Sources */,
 				7F7C4A8B229AC2B7003267E1 /* CustomView.swift in Sources */,
 				7F7C4A79229A92E6003267E1 /* ViewController.swift in Sources */,

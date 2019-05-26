@@ -12,14 +12,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var LabelShake: UILabel!
     
+    @IBOutlet weak var finishButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        finishButton.layer.cornerRadius = finishButton.frame.size.width/2
         
         // Do any additional setup after loading the view.
         randomizeBackground()
         LabelShake.pulseL()
+       
         
+    }
+    
+    @IBAction func finishTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        UIRefreshControl()
     }
     
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
@@ -27,7 +35,7 @@ class ViewController: UIViewController {
             self.randomizeBackground()
             self.drawCircle()
             self.LabelShake.pulseL()
-
+            self.finishButton.pulseB1()
         }
     }
     

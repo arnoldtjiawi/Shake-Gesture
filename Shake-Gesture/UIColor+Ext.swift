@@ -32,3 +32,27 @@ extension UILabel{
         layer.add(pulse, forKey: nil)
     }
 }
+extension UIButton{
+    func pulseB(){
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 30
+        pulse.fromValue = 0.80
+        pulse.toValue = 1.0
+        pulse.autoreverses = true
+        pulse.repeatCount = 1000
+        pulse.initialVelocity = 1
+        pulse.damping = 1.0
+        layer.add(pulse, forKey: nil)
+    }
+    func pulseB1(){
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 0.2
+        pulse.fromValue = 0.85
+        pulse.toValue = 1.0
+        pulse.autoreverses = true
+        pulse.repeatCount = 3
+        pulse.initialVelocity = 1
+        pulse.damping = 1.0
+        layer.add(pulse, forKey: nil)
+    }
+}
