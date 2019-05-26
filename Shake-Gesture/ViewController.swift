@@ -19,15 +19,16 @@ class ViewController: UIViewController {
         finishButton.layer.cornerRadius = finishButton.frame.size.width/2
         
         // Do any additional setup after loading the view.
-        randomizeBackground()
+        
         LabelShake.pulseL()
        
         
     }
     
     @IBAction func finishTapped(_ sender: Any) {
+        view.backgroundColor = UIColor(red: 221.0/255.0, green: 214.0/255.0, blue: 70.0/255.0, alpha: 1.0)
         self.dismiss(animated: true, completion: nil)
-        UIRefreshControl()
+       
     }
     
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
@@ -44,7 +45,7 @@ class ViewController: UIViewController {
         let statusBarSize = UIApplication.shared.statusBarFrame.size
         
         let pointX = Int.random(in: 10 ..< Int(view.bounds.width) - sizeOfView - 70 )
-        let pointY = Int.random(in: (Int(statusBarSize.height) + 10) ..< Int(view.bounds.height) - sizeOfView - 80)
+        let pointY = Int.random(in: (Int(statusBarSize.height) + 85) ..< Int(view.bounds.height) - sizeOfView - 80)
         
         let newView = CustomView(frame: CGRect(x: pointX, y: pointY, width: 60, height: 60))
         

@@ -20,9 +20,9 @@ class CustomView: UIView {
         self.gestureRecognizers = [panRecognizer]
         
         //randomize view color
-        let blueValue = CGFloat.random(in: 0.3 ..< 1)
-        let greenValue = CGFloat.random(in: 0.3 ..< 1)
-        let redValue = CGFloat.random(in: 0.3 ..< 1)
+        let blueValue = CGFloat.random(in: 0.35 ..< 1)
+        let greenValue = CGFloat.random(in: 0.35 ..< 1)
+        let redValue = CGFloat.random(in: 0.35 ..< 1)
         
         self.backgroundColor = UIColor(red:redValue, green: greenValue, blue: blueValue, alpha: 1.0)
     }
